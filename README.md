@@ -1,5 +1,7 @@
 A JSON framework that deserialize the JSON string/data directly into Objective-C objects, as opposed to NSDictionary and NSArray in others.
 
+I've been using this for 3 years, in a bunch of different projects, most of which are in-house apps. It was an extension of the yajl-objc library, but the author didn't accept the pull request. So I make this as a separate project.
+
 # Installation
 
 Cocoapods preferred now, in your `Podfile`:
