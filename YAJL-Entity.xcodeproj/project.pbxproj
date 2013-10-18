@@ -362,6 +362,7 @@
 /* Begin XCBuildConfiguration section */
 		45F821CD180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -404,6 +405,7 @@
 		};
 		45F821CE180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -468,6 +470,7 @@
 		};
 		45F821D3180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -494,6 +497,7 @@
 		};
 		45F821D4180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
