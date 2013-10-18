@@ -7,14 +7,14 @@ Pod::Spec.new do |s|
                    On top of yajl-objc, YAJL-Entity deserialize the JSON string directly into Objective-C objects, as opposed to what you get from most other libraries: NSDictionary or NSData. Which makes your models as clean as possible.
                    DESC
 
-  s.homepage     = "https://github.com/Xenofex/yajl-objc/tree/master/YAJL-Entity"
+  s.homepage     = "https://github.com/Xenofex/YAJL-Entity"
 
   s.license      = 'MIT'
   s.author       = { "Eli Wang" => "sirxenofex@gmail.com" }
 
   s.platform     = :ios
 
-  s.source       = { :git => "http://github.com/Xenofex/yajl-objc.git", :tag => "v1.0", :submodules => true }
+  s.source       = { :git => "https://github.com/Xenofex/YAJL-Entity.git", :tag => "v1.0", :submodules => true }
 
   s.source_files  = 'yajl-objc/Classes/**/*.{h,m}', 'yajl-objc/Libraries/**/*.{h,m}', 
                     'yajl-objc/yajl-1.0.11/**/*.{h,c}', 'YAJL-Entity/*.{h,m}'
