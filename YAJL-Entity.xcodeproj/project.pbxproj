@@ -134,8 +134,6 @@
 		45F82238180FCD1A00E051F9 /* MyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyEntity.h; sourceTree = "<group>"; };
 		45F82239180FCD1A00E051F9 /* MyEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyEntity.m; sourceTree = "<group>"; };
 		45F8223A180FCD1A00E051F9 /* YAJL-EntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YAJL-EntityTest.m"; sourceTree = "<group>"; };
-		45F8223E180FCDC700E051F9 /* YAJLTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAJLTestCase.h; sourceTree = "<group>"; };
-		45F8223F180FCDC700E051F9 /* YAJLTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAJLTestCase.m; sourceTree = "<group>"; };
 		45F82245180FD52F00E051F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,8 +229,6 @@
 		45F821C5180FC0A100E051F9 /* YAJL-EntityTests */ = {
 			isa = PBXGroup;
 			children = (
-				45F8223E180FCDC700E051F9 /* YAJLTestCase.h */,
-				45F8223F180FCDC700E051F9 /* YAJLTestCase.m */,
 				45F821CB180FC0A100E051F9 /* YAJL_EntityTests.m */,
 				45F82235180FCD1A00E051F9 /* my-entity.json */,
 				45F82236180FCD1A00E051F9 /* MyAddress.h */,
@@ -657,6 +653,7 @@
 				45F821D1180FC0A100E051F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45F821D2180FC0A100E051F9 /* Build configuration list for PBXNativeTarget "YAJL-EntityTests" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +662,7 @@
 				45F821D4180FC0A100E051F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
