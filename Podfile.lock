@@ -1,0 +1,13 @@
+PODS:
+  - yajl (1.0.12)
+  - yajl-objc (0.2.27):
+    - yajl (~> 1.0.11)
+
+DEPENDENCIES:
+  - yajl-objc
+
+SPEC CHECKSUMS:
+  yajl: 7a6336470c6c72c0e805b1340a538f3e381b6b16
+  yajl-objc: 2257a588e12f2dc423276d777efe3279830f1362
+
+COCOAPODS: 0.26.2

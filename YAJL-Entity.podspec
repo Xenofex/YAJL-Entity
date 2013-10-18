@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Eli Wang" => "sirxenofex@gmail.com" }
 
   s.platform     = :ios
-
+  s.dependency   = 'yajl-objc', '~> 0.2.27'
   s.source       = { :git => "https://github.com/Xenofex/YAJL-Entity.git", :tag => "v1.0", :submodules => true }
 
   s.source_files  = 'yajl-objc/Classes/**/*.{h,m}', 'yajl-objc/Libraries/**/*.{h,m}', 

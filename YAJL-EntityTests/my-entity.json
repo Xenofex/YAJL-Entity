@@ -1,7 +1,7 @@
 {
-    "name" : "the entity name",                  // String
-    "value" : 100,                               // Primitive
-    "addresses" : [                              // Array of objects
+    "name" : "the entity name",
+    "value" : 100,
+    "addresses" : [
                    {
                    "city" : "Shanghai",
                    "zipcode" : "200000"
@@ -12,11 +12,11 @@
                    }
                    ],
     
-    "followers" : [200, 201, 202, 205],          // Array of primitives
+    "followers" : [200, 201, 202, 205],
     
-    "parent" : {                                 // Nested object
+    "parent" : {
         "name" : "the inner entity name",
-        "value" : null,                          // null as the value of a primitive
+        "value" : null,
         "addresses" : [
                        {
                        "city" : "Shanghai inner",
@@ -27,11 +27,11 @@
                        "zipcode" : "100000"
                        }
                        ],
-        "followers": [],                          // Empty array
-        "parent" : null                           // null object
+        "followers": [],
+        "parent" : null
     },
     
-    "is_new?"   : true,                           // Key ending with '?' and starts with 'is_', '?' should be stripped
-    "outdated?": true                             // Key ending with '?', should be mapped to 'isOutdated'
+    "is_new?"   : true,
+    "outdated?": true                            
     
 }
