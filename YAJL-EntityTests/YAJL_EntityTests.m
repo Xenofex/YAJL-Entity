@@ -25,19 +25,10 @@
 
 
 - (NSData *)loadData:(NSString *)name {
-    NSBundle *testBundle = nil;
-    
-    for (NSBundle *bundle in [NSBundle allBundles]) {
-        if ([[bundle bundlePath] hasSuffix:@"YAJL-EntityTests.xctest"]) {
-            testBundle = bundle;
-            break;
-        }
-    }
-    
-    XCTAssertNotNil(testBundle, @"testBundle should not be nil");
-    
+    NSBundle *testBundle = [NSBundle bundleForClass:[self class]];
     NSString *path = [testBundle pathForResource:name ofType:@"json"];
     XCTAssertNotNil(path, @"Invalid name for load data");
+    
     return [NSData dataWithContentsOfFile:path options:NSUncachedRead error:nil];
 }
 
