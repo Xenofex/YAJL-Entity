@@ -43,7 +43,11 @@
         for (int j = 0; attr[j] != '\0'; j++) {
             if (attr[j] == '@') {
                 NSString *str = [NSString stringWithUTF8String: property_getName(properties[i])];
-                [set addObject: str];
+                                
+                //Don't include Read-only properties!
+                if (![[[NSString stringWithUTF8String:attr] componentsSeparatedByString:@","] containsObject:@"R"])
+                    [set addObject: str];
+
                 break;
             }
         }
