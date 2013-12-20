@@ -73,15 +73,12 @@
     
     XCTAssertEqualObjects(entity.name, @"the entity name", @"");
     XCTAssertEqual(entity.value, 100, @"");
-    NSArray *followers = [NSArray arrayWithObjects:[NSNumber numberWithInt:200],
-                          [NSNumber numberWithInt:201],
-                          [NSNumber numberWithInt:202],
-                          [NSNumber numberWithInt:205], nil];
+    NSArray *followers = @[@200, @201, @202, @205];
     XCTAssertEqualObjects(entity.followers, followers, @"");
     XCTAssertEqual([entity.addresses count], (NSUInteger)2, @"");
     
-    MyAddress *a1 = [entity.addresses objectAtIndex:0];
-    MyAddress *a2 = [entity.addresses objectAtIndex:1];
+    MyAddress *a1 = (entity.addresses)[0];
+    MyAddress *a2 = (entity.addresses)[1];
     
     XCTAssertEqualObjects(a1.city, @"Shanghai", @"");
     XCTAssertEqual(a1.zipcode, 200000, @"");
@@ -96,8 +93,8 @@
     XCTAssertEqual(entity.parent.value, 0, @"");
     XCTAssertEqual([entity.parent.addresses count], (NSUInteger)2, @"");
     
-    a1 = [entity.parent.addresses objectAtIndex:0];
-    a2 = [entity.parent.addresses objectAtIndex:1];
+    a1 = (entity.parent.addresses)[0];
+    a2 = (entity.parent.addresses)[1];
     
     XCTAssertEqualObjects(a1.city, @"Shanghai inner", @"");
     XCTAssertEqual(a1.zipcode, 200000, @"");
