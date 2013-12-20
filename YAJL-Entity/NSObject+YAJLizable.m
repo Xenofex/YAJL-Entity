@@ -28,22 +28,22 @@ int EWPropNameUpperCaseFirstChar = 0;
 
 @interface NSObject(YAJLizablePrivate)
 
-- (NSMutableDictionary *)newDictionaryOfPropertiesAsClass:(Class) aClass option:(EWPropDictOption)option;
+- (NSMutableDictionary *)newDictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate asClass:(Class) aClass option:(EWPropDictOption)option;
 
 @end
 
 @implementation NSObject(YAJLizable)
 
-- (NSDictionary *)newDictionaryOfPropertiesWithOption:(EWPropDictOption)option
+
+- (NSDictionary *)newDictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate option:(EWPropDictOption)option
 {
     Class superClass = [self class];
-    NSMutableDictionary *dict = [self newDictionaryOfPropertiesAsClass:[self class] option:option];
-    
+    NSMutableDictionary *dict = [self newDictionaryOfPropertiesWithPredicate:predicate asClass:[self class] option:option];
     
     while ((superClass = [superClass superclass])) {
         // TEST if the current superClass is NSObject. If it's true, break;
         if ([superClass superclass] != nil) {
-            NSMutableDictionary *superDict = [self newDictionaryOfPropertiesAsClass:superClass option:option];
+            NSMutableDictionary *superDict = [self newDictionaryOfPropertiesWithPredicate:predicate asClass:superClass option:option];
             [dict addEntriesFromDictionary:superDict];
             [superDict release];
         } else {
@@ -55,6 +55,16 @@ int EWPropNameUpperCaseFirstChar = 0;
     [dict release];
     
     return ret;
+}
+
+- (NSDictionary *)dictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate option:(EWPropDictOption)option
+{
+    return [[self newDictionaryOfPropertiesWithPredicate:predicate option:option] autorelease];
+}
+
+- (NSDictionary *)newDictionaryOfPropertiesWithOption:(EWPropDictOption)option
+{
+    return [self newDictionaryOfPropertiesWithPredicate:nil option:option];
 }
 
 - (NSDictionary *)dictionaryOfPropertiesWithOption:(EWPropDictOption)option
@@ -77,19 +87,25 @@ int EWPropNameUpperCaseFirstChar = 0;
 	return [self init];
 }
 
-- (NSMutableDictionary *)newDictionaryOfPropertiesAsClass:(Class)aClass option:(EWPropDictOption)option
+- (NSMutableDictionary *)newDictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate asClass:(Class)aClass option:(EWPropDictOption)option
 {
 	NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
     NSArray *propertyNames = [aClass propertyNames];
+    if (predicate) {
+        propertyNames = [propertyNames filteredArrayUsingPredicate:predicate];
+    }
+    
 	NSString *propName;
 	NSString *dictKey = nil;
 	for (propName in propertyNames) {
-        if (option & EWPropDictSnakecase)
+        if (option & EWPropDictSnakecase) {
             dictKey = [propName snakecaseString];
-        else if (EWPropNameUpperCaseFirstChar)
+        } else if (EWPropNameUpperCaseFirstChar) {
 			dictKey = [propName stringByUppercaseFirstChar];
-		else
+		} else {
 			dictKey = propName;
+        }
+        
 		[dic setValue:[self valueForKey:propName] forKey:dictKey];
 	}
 	

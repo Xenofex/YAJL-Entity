@@ -24,12 +24,16 @@
 
 extern int EWPropNameUpperCaseFirstChar;
 
-typedef enum __EWPropDictOption {
+typedef NS_OPTIONS(NSUInteger, EWPropDictOption) {
     EWPropDictOptionNone = 0,
-    EWPropDictSnakecase = 1
-} EWPropDictOption;
+    EWPropDictSnakecase = 1 << 1
+};
 
 @interface NSObject(YAJLizable)
+
+- (NSDictionary *) newDictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate option:(EWPropDictOption)option;
+- (NSDictionary *) dictionaryOfPropertiesWithPredicate:(NSPredicate *)predicate option:(EWPropDictOption)option;
+
 
 - (NSDictionary *) newDictionaryOfPropertiesWithOption:(EWPropDictOption)option;
 - (NSDictionary *) dictionaryOfPropertiesWithOption:(EWPropDictOption)option;
