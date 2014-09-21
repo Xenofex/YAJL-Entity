@@ -27,7 +27,7 @@
 
 @interface YAJLObjectParser : NSObject <YAJLParserDelegate> {
 	Class klass_;
-    id stub_;
+	id stub_;
 	
 	id root_; // NSArray or NSDictionary
 	YAJLParser *parser_;
@@ -43,7 +43,7 @@
 	NSMutableArray *stack_;
 	NSMutableArray *keyStack_;
 	NSMutableArray *arrayTypeStack_;
-    NSMutableArray *classObjectSweeperStack_;
+	NSMutableArray *classObjectSweeperStack_;
 	
 	YAJLDecoderCurrentType currentType_;
 	
