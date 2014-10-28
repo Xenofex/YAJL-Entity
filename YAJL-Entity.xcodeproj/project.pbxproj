@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E079D1FABD04011B28F9027 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		1E60DFC628EE7043FD7A38A9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		45F821AC180FC0A100E051F9 /* libYAJL-Entity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libYAJL-Entity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F821AF180FC0A100E051F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45F821B3180FC0A100E051F9 /* YAJL-Entity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YAJL-Entity-Prefix.pch"; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 		45F8223A180FCD1A00E051F9 /* YAJL-EntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YAJL-EntityTest.m"; sourceTree = "<group>"; };
 		45F82245180FD52F00E051F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8EED04C0FB1D423CA2130014 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F41F3921E354DCA9E6597A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +121,7 @@
 				45F821C5180FC0A100E051F9 /* YAJL-EntityTests */,
 				45F821AE180FC0A100E051F9 /* Frameworks */,
 				45F821AD180FC0A100E051F9 /* Products */,
-				2E079D1FABD04011B28F9027 /* Pods.xcconfig */,
+				BA6172BADBDC1FBB677AEC31 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +202,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BA6172BADBDC1FBB677AEC31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0F41F3921E354DCA9E6597A /* Pods.debug.xcconfig */,
+				1E60DFC628EE7043FD7A38A9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,7 +257,7 @@
 		45F821A4180FC0A100E051F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 45F821A7180FC0A100E051F9 /* Build configuration list for PBXProject "YAJL-Entity" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -307,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -362,10 +372,8 @@
 /* Begin XCBuildConfiguration section */
 		45F821CD180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -405,10 +413,8 @@
 		};
 		45F821CE180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -442,7 +448,7 @@
 		};
 		45F821D0180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
+			baseConfigurationReference = D0F41F3921E354DCA9E6597A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/YAJL_Entity.dst;
@@ -456,7 +462,7 @@
 		};
 		45F821D1180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
+			baseConfigurationReference = 1E60DFC628EE7043FD7A38A9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/YAJL_Entity.dst;
@@ -470,9 +476,7 @@
 		};
 		45F821D3180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -497,9 +501,7 @@
 		};
 		45F821D4180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E079D1FABD04011B28F9027 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

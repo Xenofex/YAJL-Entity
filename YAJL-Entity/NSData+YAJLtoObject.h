@@ -21,7 +21,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "YAJL.h"
+#import <yajl-objc/YAJL.h>
 
 
 @interface NSData(YAJLtoObject) 
