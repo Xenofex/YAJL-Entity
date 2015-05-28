@@ -33,7 +33,13 @@
 	if ( count == 0 )
 	{
 		free( properties );
-		return ( nil );
+        
+        Class superClass = [self superclass];
+        if (superClass != [NSObject class]) {
+            return [superClass mutableSetOfObjectPropertyNames];
+        } else {
+            return [NSMutableSet setWithCapacity:1];
+        }
 	}
 	
 	NSMutableSet * set = [NSMutableSet setWithCapacity:10];
