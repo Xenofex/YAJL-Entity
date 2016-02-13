@@ -6,7 +6,7 @@ I've been using this for 3 years, in a bunch of different projects, most of whic
 
 # Installation
 
-[Cocoapods](https://github.com/cocoapods/cocoapods) preferred now. In your `Podfile`:
+[CocoaPods](https://github.com/cocoapods/cocoapods) preferred now. In your `Podfile`:
 
 ```ruby
 pod 'YAJL-Entity'
