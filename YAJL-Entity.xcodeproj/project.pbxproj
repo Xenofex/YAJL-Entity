@@ -372,6 +372,7 @@
 /* Begin XCBuildConfiguration section */
 		45F821CD180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECAE4C2D6BE8BE3B8E6BF72 /* Pods-YAJL-Entity.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
@@ -412,6 +413,7 @@
 		};
 		45F821CE180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -474,6 +476,7 @@
 		};
 		45F821D3180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -500,6 +503,7 @@
 		};
 		45F821D4180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
