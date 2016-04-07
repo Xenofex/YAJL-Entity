@@ -12,7 +12,7 @@ I've been using this for 3 years, in a bunch of different projects, most of whic
 pod 'YAJL-Entity'
 ```
 
-# A Short Demo
+# A Brief Demo
 
 Checkout the tests in this project. In `YAJL_EntityTest.m`:
 

@@ -5,8 +5,8 @@
 //  Created by Eli Wang on 3/7/12.
 //  Copyright (c) 2012 ekohe.com. All rights reserved.
 //
-#import "YAJLTestCase.h"
-#import "YAJL-Entity.h"
+
+#import <YAJL-Entity/YAJL-Entity.h>
 #import "MyEntity.h"
 #import "MyAddress.h"
 #import "NSString+CaseExt.h"

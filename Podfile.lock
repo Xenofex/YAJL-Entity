@@ -1,13 +1,21 @@
 PODS:
-  - yajl (1.0.12)
-  - yajl-objc (0.2.27):
-    - yajl (~> 1.0.11)
+  - yajl-objc (0.3.0)
 
 DEPENDENCIES:
-  - yajl-objc
+  - yajl-objc (from `https://github.com/gabriel/yajl-objc.git`)
+
+EXTERNAL SOURCES:
+  yajl-objc:
+    :git: https://github.com/gabriel/yajl-objc.git
+
+CHECKOUT OPTIONS:
+  yajl-objc:
+    :commit: 92ec5e8e43d45f7c78a00402511304bc4631be45
+    :git: https://github.com/gabriel/yajl-objc.git
 
 SPEC CHECKSUMS:
-  yajl: e435f86f7429fe047dff3314608fb775defd8e09
-  yajl-objc: fe4ce4868434a4661fb446ba4400162ab48310cd
+  yajl-objc: 775afd7990c8259dc401a55f4c8ffa12fb1d06e1
 
-COCOAPODS: 0.37.1
+PODFILE CHECKSUM: 38ba0f3d3e499f45f4619ce70f265595d5c59ed6
+
+COCOAPODS: 1.0.0.beta.6
