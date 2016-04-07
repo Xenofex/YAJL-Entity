@@ -21,8 +21,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "NSObject+YAJL.h"
-#import "YAJLDocument.h"
+#import <eli-yajl-objc/NSObject+YAJL.h>
+#import <eli-yajl-objc/YAJLDocument.h>
 #import "NSObject+Properties.h"
 #import "NSObject+YAJLizable.h"
 
