@@ -51,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAJL-Entity.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAJL-Entity/Pods-YAJL-Entity.release.xcconfig"; sourceTree = "<group>"; };
 		45F821AC180FC0A100E051F9 /* libYAJL-Entity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libYAJL-Entity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F821AF180FC0A100E051F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45F821B3180FC0A100E051F9 /* YAJL-Entity-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YAJL-Entity-Prefix.pch"; sourceTree = "<group>"; };
@@ -84,8 +85,7 @@
 		45F82239180FCD1A00E051F9 /* MyEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyEntity.m; sourceTree = "<group>"; };
 		45F8223A180FCD1A00E051F9 /* YAJL-EntityTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YAJL-EntityTest.m"; sourceTree = "<group>"; };
 		45F82245180FD52F00E051F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		A4425B3B4125A61894EA715B /* Pods-YAJL-Entity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAJL-Entity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAJL-Entity/Pods-YAJL-Entity.debug.xcconfig"; sourceTree = "<group>"; };
-		D27F2ABDED458F2BFA92E3EC /* Pods-YAJL-Entity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAJL-Entity.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAJL-Entity/Pods-YAJL-Entity.release.xcconfig"; sourceTree = "<group>"; };
+		8ECAE4C2D6BE8BE3B8E6BF72 /* Pods-YAJL-Entity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAJL-Entity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAJL-Entity/Pods-YAJL-Entity.debug.xcconfig"; sourceTree = "<group>"; };
 		D2DE73FEFBDA1238E1A54A90 /* libPods-YAJL-Entity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YAJL-Entity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -205,8 +205,8 @@
 		AE23D0E3EA4F71A0905BD2F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A4425B3B4125A61894EA715B /* Pods-YAJL-Entity.debug.xcconfig */,
-				D27F2ABDED458F2BFA92E3EC /* Pods-YAJL-Entity.release.xcconfig */,
+				8ECAE4C2D6BE8BE3B8E6BF72 /* Pods-YAJL-Entity.debug.xcconfig */,
+				2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -443,7 +443,7 @@
 		};
 		45F821D0180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4425B3B4125A61894EA715B /* Pods-YAJL-Entity.debug.xcconfig */;
+			baseConfigurationReference = 8ECAE4C2D6BE8BE3B8E6BF72 /* Pods-YAJL-Entity.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/YAJL_Entity.dst;
@@ -458,7 +458,7 @@
 		};
 		45F821D1180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D27F2ABDED458F2BFA92E3EC /* Pods-YAJL-Entity.release.xcconfig */;
+			baseConfigurationReference = 2409411C22F2C091F347ACF6 /* Pods-YAJL-Entity.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DSTROOT = /tmp/YAJL_Entity.dst;
@@ -473,7 +473,6 @@
 		};
 		45F821D3180FC0A100E051F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4425B3B4125A61894EA715B /* Pods-YAJL-Entity.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -499,7 +498,6 @@
 		};
 		45F821D4180FC0A100E051F9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D27F2ABDED458F2BFA92E3EC /* Pods-YAJL-Entity.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
