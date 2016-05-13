@@ -2,14 +2,20 @@ A JSON framework that deserialize the JSON string/data directly into Objective-C
 
 Unlike [RestKit](https://github.com/RestKit/RestKit), which requires the declaration of the [Object Mapping](https://github.com/RestKit/RestKit/wiki/Object-mapping), YAJL-Entity requires no such configuration. Property names are automatically mapped, with the snake-cased and camel-cased conversion. The type of the nested object is determined by the declared type of the property in the ObjC class. For the array, additional configuration is required, which is fairly simple. See the Short Demo section.
 
-I've been using this for 3 years, in a bunch of different projects, most of which are in-house apps. It was an extension of the yajl-objc library, but the author didn't accept the pull request. So I make this as a separate project.
+I've been using this for several years. Every commercial project created by me is depending on this. It has been battle tested for long.
+
+# Notes for Swift
+
+Swift classes are NOT supported currently (no _reflection_ API available yet). __However, you can just write your model classes in Objective-C.__
+
+By doing so, this library works fine in Swift era.
 
 # Installation
 
 [CocoaPods](https://github.com/cocoapods/cocoapods) preferred now. In your `Podfile`:
 
 ```ruby
-pod 'YAJL-Entity'
+pod 'YAJL-Entity', git: "https://github.com/Xenofex/YAJL-Entity.git", tag: "v1.1"
 ```
 
 # A Brief Demo
